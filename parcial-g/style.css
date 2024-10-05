@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #252525;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #ff3300;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 60px; /* Espacio para el menú fijo */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.movie-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan si hay muchas */
+}
+
+.image-container {
+    padding: 20px; /* Espacio alrededor de la imagen */
+    background-color: #222; /* Color de fondo del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Indica que se puede hacer clic */
+    text-align: center; /* Centra el texto */
+    margin: 10px; /* Espacio entre los cuadros */
+}
+
+.image-container img {
+    width: 120px; /* Ancho de cada imagen */
+    display: block; /* Evita espacio en la parte inferior */
+}
+
+.movie-title {
+    margin-top: 8px; /* Espacio entre la imagen y el título */
+    font-size: 16px; /* Tamaño de fuente para el título */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilo del popup */
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 350px; /* Ancho aumentado del popup */
+    position: relative; /* Para colocar la X correctamente */
+}
+
+.popup-content .close {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #fff;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0; /* Espacio en la parte superior e inferior */
+    width: 100%; /* Ocupa todo el ancho */
+    position: relative; /* Asegura que esté posicionado correctamente */
+    bottom: 0; /* Se asegura de que esté al final de la página */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Espacio entre secciones */
+    flex-wrap: wrap; /* Permite que las secciones se ajusten */
+    padding: 0 20px; /* Espacio lateral */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px; /* Ancho mínimo de las secciones */
+    margin: 10px; /* Espacio entre secciones */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center; /* Centra el texto */
+    font-size: 14px;
+}
+
+.movie-button {
+    background-color: blue; /* Color inicial del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px; /* Espacio superior */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.movie-button.red {
+    background-color: red; /* Color del botón al hacer clic */
+}
+

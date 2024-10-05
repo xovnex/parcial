@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111; /* Color de fondo general */
+        }
+
+        header {
+            background-color: #222;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px; /* Espacio alrededor del texto */
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Fondo al pasar el mouse */
+            border-radius: 5px; /* Bordes redondeados al pasar el mouse */
+        }
+
+        .movie-summary {
+            margin-top: 80px; /* Espacio para el menú fijo */
+            text-align: left;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 8px;
+        }
+
+        .movie-item {
+            margin-bottom: 20px;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #333;
+        }
+
+        .movie-item img {
+            width: 150px;
+            height: auto;
+            display: inline-block;
+            margin-right: 15px;
+            border-radius: 4px;
+        }
+
+        .movie-item h3 {
+            margin: 5px 0;
+            color: #fff; /* Color del título */
+        }
+
+        .movie-item p {
+            margin: 5px 0;
+            color: #ccc; /* Color del texto */
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-bottom {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="categorias.html">CATEGORÍAS</a></li>
+                <li><a href="favoritos.html" onclick="showFavorites()">FAVORITOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="movie-summary">
+        <h2 style="color: #fff;">juegos Recomendadas</h2>
+        <p>En nuestra tienda, ofrecemos una amplia selección de juegos para todas las plataformas, desde consolas populares como PlayStation y Xbox hasta PC y dispositivos móviles. Ya sea que busques los últimos lanzamientos, clásicos atemporales o accesorios imprescindibles, ¡tenemos algo para cada tipo de jugador!
+
+            Nos apasiona crear una comunidad de gamers y proporcionar un espacio donde puedas descubrir y disfrutar de lo mejor del mundo de los videojuegos. Con un equipo de expertos entusiastas, estamos aquí para ayudarte a encontrar el juego perfecto y ofrecerte recomendaciones personalizadas.
+            
+            Explora nuestras secciones de novedades, ofertas especiales y juegos más vendidos, y no dudes en unirte a nuestras emocionantes actividades y torneos. ¡Tu aventura comienza aquí en Game Haven</p>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
